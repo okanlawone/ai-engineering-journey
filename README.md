@@ -1,39 +1,27 @@
 # AI Engineering Journey
 
-I'm Tomi, a CIT graduate and founder who ships, building toward AI engineering and product roles through hands-on projects.
+I’m Tomi, a CIT graduate and founder building toward AI engineering and product roles through hands-on projects. This repository documents a slow, honest progression from beginner foundations toward advanced AI and machine-learning work.
 
-This repository documents a slow, honest progression from beginner foundations toward advanced AI and machine learning work. Each numbered project is runnable on its own and includes a lesson that explains the code and the choices behind it.
+## Project index
 
-## Projects
+Each project now lives in its own standalone repository. That repository is the canonical home for its runnable code, detailed teaching guide, open-ended challenge, and multi-session progress tracker.
 
-| Project | Concept | What it demonstrates | Materials |
-| --- | --- | --- | --- |
-| 01 · One-hot encoding | Represent unordered department categories as indicator columns | Use pandas to create one-hot columns and join them back to the original reviews table | [Project guide](projects/01-one-hot-encoding/README.md) · [Lesson](projects/01-one-hot-encoding/lesson.md) |
-| 02 · Ordinal encoding | Choose encodings based on whether categories have a meaningful order | Compare one-hot encoding for department names with a manual mapping and scikit-learn's `OrdinalEncoder` for product condition | [Project guide](projects/02-ordinal-encoding/README.md) · [Lesson](projects/02-ordinal-encoding/lesson.md) |
+| Project | Concept | Standalone repository |
+| --- | --- | --- |
+| 01 | One-hot encode unordered department categories with pandas | [01-one-hot-encoding](https://github.com/okanlawone/01-one-hot-encoding) |
+| 02 | Compare nominal one-hot features with meaningful ordinal codes | [02-ordinal-encoding](https://github.com/okanlawone/02-ordinal-encoding) |
+| 03 | Select numeric features and scale without fitting preprocessing on held-out rows | [03-scaling-numeric-features](https://github.com/okanlawone/03-scaling-numeric-features) |
 
-**Skills so far:** Python, pandas, and scikit-learn preprocessing, including categorical encoding.
+Each project repository has a `README.md` for its goal and setup, a `lesson.md` for the detailed explanation and project challenge, and a `progress.md` to record work across sessions. Projects may take more than one day; the next project starts after the current required checkpoints are complete.
 
-## Run a project
+## Learning sequence and data
 
-Install Python 3, clone the repository, and move into the project folder you want to run. For example:
+The sequence moves gradually from data preparation toward model training and evaluation. Projects 1–3 teach preprocessing concepts and do not claim prediction performance. Their small CSVs contain invented practice examples, not real customer data. Practice data is not automatically training data: a supervised model needs a target and a deliberate training/evaluation process.
 
-```bash
-git clone https://github.com/okanlawone/ai-engineering-journey.git
-cd ai-engineering-journey/projects/01-one-hot-encoding
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-python main.py
-```
+## Preserved project history
 
-To run another project, replace `01-one-hot-encoding` in the `cd` path with that project's folder name. Each project has its own `requirements.txt` and `main.py`.
-
-## Data and scope
-
-The first two projects use small, invented practice datasets made to explain preprocessing. They do not contain real customer data. These projects prepare columns; they do not train prediction models yet.
+The folders `projects/01-one-hot-encoding`, `projects/02-ordinal-encoding`, and `projects/03-scaling-numeric-features` remain here as copies of the original combined-repository sequence. No project files were removed. Continue future project work in the standalone repositories above.
 
 ## Roadmap
 
-- Train and inspect a first prediction model.
-- Explore unsupervised learning with K-means clustering.
-- Evaluate results with suitable metrics and clear comparisons.
+After the preprocessing foundations, the sequence can move into a careful first prediction workflow, then unsupervised learning with K-means, and later suitable evaluation metrics. The pacing will follow the project checkpoints rather than force one new project every day.
