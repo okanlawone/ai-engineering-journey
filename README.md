@@ -11,12 +11,13 @@ Each project now lives in its own standalone repository. That repository is the 
 | 01 | One-hot encode unordered department categories with pandas | [01-one-hot-encoding](https://github.com/okanlawone/01-one-hot-encoding) |
 | 02 | Compare nominal one-hot features with meaningful ordinal codes | [02-ordinal-encoding](https://github.com/okanlawone/02-ordinal-encoding) |
 | 03 | Select numeric features and scale without fitting preprocessing on held-out rows | [03-scaling-numeric-features](https://github.com/okanlawone/03-scaling-numeric-features) |
+| 04 | Retrieve source passages for document questions and inspect evidence | [04-document-qa-system](https://github.com/okanlawone/04-document-qa-system) |
 
 Each project repository has a `README.md` for its goal and setup, a `lesson.md` for the detailed explanation and project challenge, and a `progress.md` to record work across sessions. Projects may take more than one day; the next project starts after the current required checkpoints are complete.
 
 ## Learning sequence and data
 
-The sequence moves gradually from data preparation toward model training and evaluation. Projects 1–3 teach preprocessing concepts and do not claim prediction performance. Their small CSVs contain invented practice examples, not real customer data. Practice data is not automatically training data: a supervised model needs a target and a deliberate training/evaluation process.
+The sequence moves gradually from data preparation into retrieval, model use, and evaluation. Projects 1–3 teach preprocessing concepts and do not claim prediction performance. Project 4 begins a retrieval and knowledge-engineering path. Its handbook is invented practice content, not real policy or model-training data. Practice data is not automatically training data: a supervised model needs a target and a deliberate training/evaluation process.
 
 ## Preserved project history
 
@@ -24,4 +25,4 @@ The folders `projects/01-one-hot-encoding`, `projects/02-ordinal-encoding`, and 
 
 ## Roadmap
 
-After the preprocessing foundations, the sequence can move into a careful first prediction workflow, then unsupervised learning with K-means, and later suitable evaluation metrics. The pacing will follow the project checkpoints rather than force one new project every day.
+Project 4 begins a retrieval and knowledge-engineering path from the shared project-ideas article. It starts with a transparent retrieval baseline; later milestones will check retrieval quality before introducing generated answers. Next projects will be chosen from the article and matched to Tomi’s current level. Complex projects can span more than one session; each guide is designed to build understanding, experiments, and judgment rather than syntax memorization.
