@@ -36,3 +36,7 @@ Tomi’s learner-authored first action/method lookup and its `return` versus `pr
 ## Latest Project 4 build — October 21, 2026
 
 The daily Project 4 update adds a runnable [return-versus-print trace](https://github.com/okanlawone/04-document-qa-system/blob/main/restart/return_print_trace.py) and a [line-by-line walkthrough](https://github.com/okanlawone/04-document-qa-system/blob/main/restart/lesson_02_return_print_trace.md). Tomi’s learner check remains open, so the teaching stays on the same concept.
+
+## Latest Project 4 build — October 22, 2026
+
+The daily increment adds a runnable [stored-return-value example](https://github.com/okanlawone/04-document-qa-system/blob/main/restart/store_return_value.py) and its [line-by-line lesson](https://github.com/okanlawone/04-document-qa-system/blob/main/restart/lesson_03_store_return_value.md). It stays within the return-versus-print foundation: one function call returns a value, the caller saves it, then displays it twice. The learner check remains open, so this repository update is not evidence of mastery. The fresh-start [guide](https://github.com/okanlawone/04-document-qa-system/blob/main/restart/README.md) and [progress tracker](https://github.com/okanlawone/04-document-qa-system/blob/main/restart/progress.md) are also available.
